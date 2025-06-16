@@ -1,88 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile Store</title>
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/index.css" />
   </head>
   <body>
     <header>
-      <img src="images/Mobile.avif" height="100px" width="100px">
+      <img src="images/Mobile.avif" height="100px" width="100px" />
       <div class="head" id="head">
         <h2 class="heading">Mobile Store</h2>
       </div>
 
       <div class="navbar" id="navbar">
         <ul>
-          <li  class="list"><a class="active" href="#home">Home</a></li>
-          <li  class="list"><a href="#contact">Contact</a></li>
-          <li  class="list"><a href="#service">Service</a></li>
-          <li  class="list" style="float: right;"><a class="about-link" href="#about Us">About Us</a></li>
+          <li class="list"><a class="active" href="#home">Home</a></li>
+          <li class="list"><a href="#contact">Contact</a></li>
+          <li class="list"><a href="#service">Service</a></li>
+          <li class="list" style="float: right">
+            <a class="about-link" href="#about Us">About Us</a>
+          </li>
         </ul>
       </div>
     </header>
-    
-    <main>
-      <section class="Home" id="Home">
-        <h2>Welcome to mobile Store</h2>
-        <form action="#home" method="post"></form>
-        <label for="phone_brand">Select Your Phone Brand</label>
-        <select name="phone_brand" id="phone_brand">
-          <option>iphone</option>
-          <option>Samsung</option>
-          <option>Oppo</option>
-          <option>Oneplus</option>
-        </select>
-        <br>
-        <label for="user_name">Name:</label>
-        <input type="text" name="user_name">
-        <br>
-        <label for="user_phone">Enter Phone Number:</label>
-        <input type="number" name="user_phone">
-        <br>
-        <label for="user_age">Enter Your Age:</label>
-        <input type="number" name="user_age">
-        <br>
-        <label for="user_dob">Enter Your DOB:</label>
-        <input type="date" name="user_dob">
-        <br>
-        <label for="user_mail">Enter Your EmailId:</label>
-        <input type="email" name="user_mail">
-        <br>
-        <label for="user_pwd">Enter Your Password:</label>
-        <input type="password" name="user_pwd">
-        <br>
-        <label for="submit">Clik to Submit:</label>
-        <button>Click Me!</button>
-        <br>
-        <form>
-          <label for="sometext">Form Dispaly Text:</label>
-          <textarea type="text" id="sometext" name="sometext">Sometext---</textarea>
-          <!-- <input type="text" id="sometext" name="sometext"> -->
-        </form>
-      </section>
-    </main>
+    <h2>Welcome to mobile Store</h2>
+    <div class="container">
+      <form action="#home" method="post">
+        <div class="row">
+          <div class="col-25">
+            <label for="phone_brand">Select Phone Brand:</label>
+          </div>
+          <div class="col-75">
+            <select name="phone_brand" id="phone_brand">
+              <option value="iphone">Iphone</option>
+              <option value="samsung">Samsung</option>
+              <option value="oppo">Oppo</option>
+              <option value="oneplus">Oneplus</option>
+            </select>
+          </div>
+        </div>
 
-    <section class="About" id="about">
-        <h1>About Our Company !</h1>
-        <p>Mobile Store is the best store in the city where you will find all type of mobiles!!</p>
+        <div class="row">
+          <div class="col-25">
+            <label for="user_name">Name:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="user_name" name="user_name" placeholder="please enter your name"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="user_phone">Enter Phone Number:</label>
+          </div>
+          <div class="col-75">
+            <input type="number" name="user_phone" id="user_phone" placeholder="please enter your number"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="user_age">Enter Your Age:</label>
+          </div>
+          <div class="col-75">
+            <input type="number" name="user_age" id="user_age"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="user_dob">Enter Your DOB:</label>
+          </div>
+          <div class="col-75">
+            <input type="date" name="user_dob" id="user_dob"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="user_int">Enter Your Interests:</label>
+          </div>
+          <div class="col-75">
+            <textarea name="user_int" id="user_int" placeholder="Write your interests" style="height: 200px;"></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="user_pwd">Enter Your Password:</label>
+          </div>
+          <div class="col-75">
+            <input type="password" name="user_pwd" id="user_pwd"/>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+    <!-- <section class="About" id="about">
+      <h1>About Our Company !</h1>
+      <p>
+        Mobile Store is the best store in the city where you will find all type
+        of mobiles!!
+      </p>
     </section>
 
     <section class="Contact" id="Contact">
-        <h1>Contact Us</h1>
-        <p>Address : Udupi</p>
-        <p>Store Ph : 9999999999</p>
+      <h1>Contact Us</h1>
+      <p>Address : Udupi</p>
+      <p>Store Ph : 9999999999</p>
     </section>
 
     <section class="Service" id="Service">
-        <h1>Service Provided By Us</h1>
-        <ol>
-            <li>New Phone</li>
-            <li>Phone Repair</li>
-            <li>Phone Services</li>
-            <li>Exchange</li>
-        </ol>
-    </section>
+      <h1>Service Provided By Us</h1>
+      <ol>
+        <li>New Phone</li>
+        <li>Phone Repair</li>
+        <li>Phone Services</li>
+        <li>Exchange</li>
+      </ol>
+    </section> -->
   </body>
 </html>
