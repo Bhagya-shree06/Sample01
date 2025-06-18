@@ -1,6 +1,6 @@
 h2.heading {
   color: #0000ff;
-  font-family: serif;
+  font-family:serif;
 }
 
 ul {
@@ -125,6 +125,8 @@ input[type=submit]{
   clear: both;
 }
 
+
+
 /* Responsive - when screen size is less than 100px, make  two columns display on top of each other */
 @media screen and (max-width:600px){
   .col-25, .col-75,input[type=submit]{
@@ -132,3 +134,4 @@ input[type=submit]{
     margin-top: 0;
   } 
 }
+
